@@ -24,6 +24,12 @@ export class CartComponent {
     });
   }
 
+  // serviço
+  removeToCart(product) {
+    window.alert('Your product has been removed to the cart!');
+    this.cartService.removeToCart(product);
+  }
+
   onSubmit(customerData) {
     // Process checkout data here
     console.warn('Your order has been submitted', customerData);

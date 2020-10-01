@@ -14,6 +14,11 @@ export class CartService {
     this.items.push(product);
   }
 
+  removeToCart(product) {
+    var index = this.items.indexOf(product);
+    this.items.splice(index, 1);
+  }
+
   getItems() {
     return this.items;
   }
